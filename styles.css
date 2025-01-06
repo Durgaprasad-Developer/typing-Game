@@ -1,0 +1,183 @@
+/* Reset browser defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+  font-family: "Inter", sans-serif; /* Modern sans-serif font */
+  background-color: #121212; /* Darker background for a more sleek feel */
+  color: #eaeaea; /* Light text color for high contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  transition: background-color 0.3s ease;
+}
+
+/* Main container */
+.container {
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+  padding: 30px;
+  background: #1e1e1e; /* Slightly lighter background for the container */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Challenge text styling */
+.challenge {
+  font-size: 2rem;
+  line-height: 1.6;
+  word-spacing: 0.1rem;
+  margin-bottom: 30px;
+  letter-spacing: 0.05rem;
+  color: #eaeaea;
+  font-weight: 500;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Timer styling */
+.timer {
+  font-size: 2.2rem;
+  color: #c2c2c2;
+  margin-bottom: 20px;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+  transition: color 0.3s ease;
+}
+
+/* Score styling */
+.score {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #4caf50; /* Green accent for score */
+  text-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
+}
+
+/* Input field container */
+.input {
+  margin-top: 30px;
+  transition: margin-top 0.3s ease;
+}
+
+/* Input field styling */
+input {
+  font-size: 1.6rem;
+  padding: 18px;
+  width: 100%;
+  max-width: 700px;
+  background: #2b2b2b;
+  color: #eaeaea;
+  border: 2px solid #444;
+  border-radius: 10px;
+  outline: none;
+  text-align: center;
+  letter-spacing: 0.05rem;
+  transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input hover and focus effects */
+input:focus {
+  border-color: #4caf50;
+  background: #333;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+}
+
+/* Buttons styling */
+button {
+  font-size: 1.3rem;
+  padding: 12px 24px;
+  margin: 10px;
+  background: #333;
+  color: #eaeaea;
+  border: 2px solid #444;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect */
+button:hover {
+  background: #4caf50;
+  border-color: #4caf50;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* Button active effect */
+button:active {
+  transform: scale(0.95);
+}
+
+/* Challenge text typing effect */
+.challenge span.correct {
+  color: #4caf50; /* Green for correct characters */
+  text-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+}
+
+.challenge span.incorrect {
+  color: #ff4c4c; /* Red for incorrect characters */
+  text-shadow: 0 0 8px rgba(255, 76, 76, 0.3);
+}
+
+/* Smooth scroll to keep the page stable */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .challenge {
+    font-size: 1.7rem;
+  }
+
+  .timer {
+    font-size: 1.8rem;
+  }
+
+  .score {
+    font-size: 1.6rem;
+  }
+
+  input {
+    font-size: 1.4rem;
+  }
+
+  button {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: #0d0d0d; /* Darker background for smaller screens */
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  .challenge {
+    font-size: 1.4rem;
+  }
+
+  .timer {
+    font-size: 1.6rem;
+  }
+
+  input {
+    font-size: 1.3rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+}
